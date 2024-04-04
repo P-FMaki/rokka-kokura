@@ -644,8 +644,29 @@ SP_menu
 	padding: 10px 1em;
 	text-decoration: none;
 	color: inherit;
+	position: relative;
 }
-
+.widget_nav_menu{
+	border: solid 1px #d25455;
+}
+.widget_nav_menu li {
+	border-bottom: dotted 1px #d25455;
+}
+.widget_nav_menu li a:after {
+    position: absolute;
+    content: '▶';
+    right: 2px;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    color: #d25455;
+    font-size: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#onayami_menu {
+	background-color: #d25455;
+}
 /*検索*/
 .widget_search {
 	text-align: center;

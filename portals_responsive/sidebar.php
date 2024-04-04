@@ -11,7 +11,6 @@
 	<?php if (is_mobile()) : ?>
 	<?php dynamic_sidebar( 'サイドバー（上）' ); ?>
     <?php get_template_part('inc/related'); ?>
-	<?php dynamic_sidebar( 'サイドバー（メニュー）' ); ?>
 	<?php get_template_part('inc/sidemenu'); ?>
 	<?php dynamic_sidebar( 'サイドバー（下）' ); ?>
 
@@ -19,7 +18,6 @@
 
 	<?php dynamic_sidebar( 'サイドバー（上）' ); ?>
     <?php get_template_part('inc/related'); ?>
-	<?php dynamic_sidebar( 'サイドバー（メニュー）' ); ?>
 	<?php get_template_part('inc/sidemenu'); ?>
 	<?php dynamic_sidebar( 'サイドバー（下）' ); ?>
 	<?php endif; ?>
