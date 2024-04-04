@@ -271,7 +271,7 @@ a:active {
 body {
 	overflow-x: hidden;
 	background: #f3ede8;
-	color: #79796a;
+	color: #523527;
 	font-size: 15px;
 	line-height: 1.5;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
@@ -338,8 +338,14 @@ a:active img {
 /*==================================
 SP_heading
 ==================================*/
-.header_conts{
+header {
 	background: #fff;
+}
+.header_conts{
+	margin: 0 auto;
+	background: #fff;
+	width: 96%;
+    max-width: 1236px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -367,8 +373,10 @@ SP_heading
 	padding: 8px;
 	font-size: 16px;
 	font-weight: bold;
-	color: #fff;
-	background: #acac9d;
+	color: #523527;
+	background: #f0e9e3;
+	border-top: solid #b7916a;
+	border-bottom: solid #b7916a;
 }
 .h_style03,
 .post h4,
@@ -706,9 +714,10 @@ SP_menu
 SP_copyright
 ==================================*/
 .copyright {
-	background: #f0f0e1;
+	background: #AE7D5F;
 	text-align: center;
 	margin: 10% 0 20%;
+	color: #fff;
 }
 .copyright small {
 	font-size: 1rem;
@@ -1356,7 +1365,7 @@ for iPad~PC
 		padding: 16px 0;
 	}
 	.side_fixed_menu li a:hover {
-		background: #f0f0e1;
+		opacity: 0.7;
 	}
 	/*メニュー（固定ページ/関連メニュー）*/
 	.widget_nav_menu,
@@ -1394,12 +1403,16 @@ for iPad~PC
 	PC_footer
 	==================================*/
 	.f_inner {
-		display: block;
+		display: flex;
 		overflow: hidden;
 		margin: 0 auto;
 		padding: 16px 0;
-		width: 95%;
-		max-width: 1024px;
+		width: 96%;
+		max-width: 1236px;
+		align-items: center;
+	}
+	.f_inner ul {
+		display: flex;
 	}
 	/*==================================
 	PC_voice
@@ -1544,8 +1557,8 @@ PC iPad landscape ~
 	#contents {
 		margin: 0 auto 40px;
 		width: 96%;
-		max-width: 1090px;
-		padding: 48px 36px;
+		max-width: 1236px;
+		padding: 48px 106px;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		background: #fff;

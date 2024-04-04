@@ -21,7 +21,7 @@
 		<ul>
 			<li><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_tel_btn.png" alt="電話予約"></a></li>
 			<li><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_hpb_btn.png" alt="ホットペッパービューティー予約"></a></li>
-			<li><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_line_btn.png" alt="LINE予約"></li>
+			<li><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_line_btn.png" alt="LINE予約"></a></li>
 		</ul>
 	</div>
 	<nav>
