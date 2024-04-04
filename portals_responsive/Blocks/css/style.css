@@ -1,0 +1,496 @@
+/*==================================
+Gutenberg_Basic
+==================================*/
+/*
+* ベースカラーの設定
+*/
+:root {
+	--bordercolor01: #e3e3da;
+	--bordercolor02: #bdbdae;
+	--bordercolor03: #79796a;
+	--bgcolor01: #fff;
+	--bgcolor02: #f7f5ee;
+	--bgcolor03: #acac9d;
+	--pointcolor: #f00;
+	--txtcolor01: #fff;
+	--txtcolor02: #333;
+}
+.editor-styles-wrapper h2 {
+	background: var(--bgcolor03);
+}
+.editor-styles-wrapper h3 {
+	border-left: solid 8px var(--bordercolor03);
+	border-bottom: dotted 2px var(--bordercolor02);
+}
+/*==================================
+Custom_Block
+==================================*/
+/*
+* お客様の声ブロック
+*/
+div.block_voice {
+	overflow: hidden;
+	padding: 16px;
+	margin: 2em 0.5em;
+	background: var(--bgcolor01);
+	border: solid 1px var(--bordercolor01);
+}
+p.block_voice_ttl {
+	margin: 0 0 8px;
+	padding: 8px 16px;
+	border-bottom: dotted 2px var(--bordercolor02);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.block_voice_container_pic figure img {
+	margin: 0 auto 16px;
+}
+p.block_voice_menseki {
+	overflow: hidden;
+	margin: 16px 16px 0;
+	font-size: 12px;
+}
+@media screen and (min-width: 782px) {
+	.block_voice_container {
+		margin-top: 1em;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	.block_voice_container_pic {
+		width: 40%;
+	}
+	.block_voice_container_txt:first-child {
+		width: 100%;
+	}
+	.block_voice_container_txt:not(:first-child) {
+		width: 54%;
+	}
+}
+/*
+* キャッチリスト
+*/
+ol.block_catch_list {
+	overflow: hidden;
+	padding: 1em;
+}
+li.block_catch_list_li {
+	list-style: none;
+	margin: 0 0 4px;
+	padding: 10px 0 8px 44px;
+	background: url(../../image/page/catch_ico01.png) no-repeat left center;
+	font-size: 20px;
+	border-bottom: dotted 2px var(--bordercolor03);
+}
+/*
+* イラストつきキャッチリスト
+*/
+ol.block_image_catch_list_list {
+	margin-top: 0;
+}
+@media screen and (min-width: 782px) {
+	div.block_image_catch_list_wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	ol.block_image_catch_list_list:first-child {
+		width: 100%;
+	}
+	ol.block_image_catch_list_list:not(:first-child) {
+		width: 60%;
+	}
+	figure.block_catch_img {
+		width: 40%;
+	}
+}
+/*
+* よくある質問
+*/
+dl.block_faq_list {
+	margin-top: 1em;
+	padding: 1em;
+	background: var(--bgcolor02);
+}
+dt.block_faq_list_q {
+	color: var(--pointcolor);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: bold;
+	line-height: 2em;
+	margin: 0 0 0.7em;
+}
+dd.block_faq_list_a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+dt.block_faq_list_q::before,
+dd.block_faq_list_a::before {
+	font-size: 2em;
+	font-weight: bold;
+	padding-right: 0.4em;
+	margin-right: 0.4em;
+}
+dt.block_faq_list_q::before {
+	content: "Q.";
+}
+dd.block_faq_list_a::before {
+	content: "A.";
+}
+
+/*
+* 〇つのポイント
+*/
+ul.block_point {
+	counter-reset: blockPoint;
+	padding: 0 1em;
+}
+li.block_point_list {
+	overflow: hidden;
+	padding: 24px 0;
+	position: relative;
+	border-bottom: dotted 2px var(--bordercolor01);
+}
+li.block_point_list:last-child {
+	border-bottom: none;
+}
+p.block_point_list_ttl {
+	position: relative;
+	font-family:  "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+		"Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+		"MS PGothic", sans-serif;
+	margin: 0 0 24px;
+	padding-left: 3.5em;
+	font-size: clamp(16px, 3vw, 24px);
+	font-weight: bold;
+	line-height: 1.3;
+	min-height: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+p.block_point_list_ttl::before,
+p.block_point_list_ttl::after {
+	position: absolute;
+	text-align: center;
+}
+p.block_point_list_ttl::before {
+	content: "Point";
+	vertical-align: bottom;
+	background: var(--bgcolor03);
+	color: var(--txtcolor01);
+	height: 3.8em;
+	width: 3.8em;
+	border-radius: 50%;
+	font-size: 80%;
+	line-height: 2.2em;
+	left: 0;
+	top: 0;
+}
+p.block_point_list_ttl::after {
+	content: counter(blockPoint);
+	counter-increment: blockPoint;
+	color: var(--txtcolor01);
+	font-size: 140%;
+	top: .8em;
+	left: .8em;
+}
+p.block_point_list_txt {
+	clear: left;
+}
+figure.block_point_list_pic {
+	margin: 0 0 1em;
+}
+@media screen and (min-width: 782px) {
+	p.block_point_list_ttl {
+		align-items: flex-start;
+	}
+	figure.block_point_list_pic {
+		float: right;
+		margin-left: 1em;
+	}
+	figure.block_point_list_pic img {
+		max-width: 300px;
+	}
+}
+
+
+/*
+*料金表
+*/
+table.block_price {
+	table-layout: fixed;
+	margin: 2em auto;
+	width: 98%;
+	text-align: center;
+}
+th.block_price_th,
+td.block_price_td {
+	vertical-align: middle;
+	padding: 3px;
+	border: solid 1px var(--bordercolor02);
+}
+th.block_price_th {
+	background-color: var(--bgcolor02);
+}
+
+/*
+*受付時間
+*/
+.block_uketsuke_wrap {
+	margin: 2em auto;
+	width: 98%;
+}
+table.block_uketsuke {
+	table-layout: fixed;
+	width: 100%;
+}
+.block_uketsuke th,
+.block_uketsuke td {
+	padding: 12px 8px;
+	border: 1px solid var(--bordercolor02);
+	text-align: center;
+	vertical-align: middle;
+}
+.block_uketsuke th {
+	font-weight: normal;
+	background: var(--bgcolor02);
+}
+.block_uketsuke tr > :first-child {
+	width: 10em;
+}
+.uketsuke_block_notes {
+	margin: 1em auto 0;
+	padding: 0 1em;
+	text-align: left;
+}
+/*
+*施術の流れ
+*/
+ul.block_flow {
+	margin: 2em auto;
+	list-style: none;
+	counter-reset: blockflow;
+}
+ul.block_flow li {
+	padding: 24px 0;
+	margin: 0 0 24px;
+	border-bottom: solid 2px var(--bordercolor03);
+	position: relative;
+}
+ul.block_flow li:first-child {
+	padding: 0 0 24px;
+}
+ul.block_flow li::before {
+	border-color: var(--bordercolor03) transparent transparent;
+	border-style: solid;
+	border-width: 60px 80px 0 80px;
+	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
+	bottom: 60px;
+	bottom: calc(clamp(16px, 4.83vw, 27.4px) * -1);
+	content: "";
+	height: 0;
+	left: calc(50% - 80px);
+	left: calc(50% - clamp(20px, 6.45vw, 80px));
+	position: absolute;
+	width: 0;
+}
+ul.block_flow li::after {
+	border-color: #fff transparent transparent;
+	border-style: solid;
+	border-width: 60px 80px 0 80px;
+	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
+	bottom: 60px;
+	bottom: calc((clamp(16px, 4.83vw, 28px) * -1) + 3px);
+	content: "";
+	height: 0;
+	left: calc(50% - 80px);
+	left: calc(50% - clamp(20px, 6.45vw, 80px));
+	position: absolute;
+	width: 0;
+}
+ul.block_flow li:last-child,
+ul.block_flow li:last-child::before,
+ul.block_flow li:last-child::after {
+	border: none;
+}
+li.block_flow_list dl {
+	overflow: hidden;
+	padding: 0 1em;
+}
+li.block_flow_list dl dt {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+li.block_flow_list dl dt::before {
+	counter-increment: blockflow;
+	content: "STEP" counter(blockflow);
+	background: var(--bgcolor03);
+	color: var(--txtcolor01);
+	border-radius: 90px;
+	font-size: 20px;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	padding: 0 0.5em;
+}
+p.block_flow_list_ttl {
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+		"Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+		"MS PGothic", sans-serif;
+	margin-bottom: 16px;
+	margin-left: 8px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+figure.block_flow_list_pic {
+	margin: 0 0 16px;
+}
+ul.block_flow_list_txt {
+	clear: left;
+}
+@media screen and (min-width: 782px) {
+	figure.block_flow_list_pic {
+		float: right;
+		margin: 0 0 16px 16px;
+	}
+	figure.block_flow_list_pic img {
+		max-width: 300px;
+	}
+	p.block_flow_list_txt {
+		clear: left;
+	}
+}
+
+/*
+* クーポンブロック
+*/
+dl.block_coupon {
+	border: 1px solid var(--bordercolor01);
+	padding: 1em;
+	margin: 2em 0.5em;
+}
+/* クーポンタイトル */
+dt.block_coupon_ttl {
+	padding-left: 2.4em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	position: relative;
+}
+dt.block_coupon_ttl::before {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: -0.2em;
+	width: 1em;
+	height: 100%;
+	padding: 0 0.5em;
+	color: #fff;
+}
+/* クーポンラベルカラー */
+dt.block_coupon_ttl.new::before {
+	content: "新規";
+	background: #000;
+}
+dt.block_coupon_ttl.repeat::before {
+	content: "再来";
+	background: #000;
+}
+dt.block_coupon_ttl.all::before {
+	content: "全員";
+	background: #000;
+}
+dt.block_coupon_ttl.limited::before {
+	content: "限定";
+	background: #000;
+}
+dt.block_coupon_ttl span {
+	display: block;
+}
+span.block_coupon_ttl_price {
+	text-align: right;
+	color: var(--pointcolor);
+}
+/* クーポン内容 */
+figure.block_coupon_conts_area {
+	display: flex;
+	align-items: flex-start;
+	font-size: 12px;
+}
+figure.block_coupon_conts_area img {
+	width: 35%;
+}
+figcaption.block_coupon_conts_area_info {
+	width: 65%;
+	margin: 0 0 1em 1em;
+}
+figcaption.block_coupon_conts_area_info dl {
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid var(--bordercolor03);
+}
+figcaption.block_coupon_conts_area_info dl dt {
+	float: left;
+	font-weight: bold;
+}
+figcaption.block_coupon_conts_area_info dl dd {
+	margin-left: 5em;
+}
+span.presentations_span:not(:last-of-type)::after {
+	content: "&";
+	display: inline-block;
+	margin-left: 0.2em;
+}
+ul.block_coupon_conts_yoyaku {
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+ul.block_coupon_conts_yoyaku li {
+	width: 45%;
+	margin: 0 0.5em 0.8em;
+	text-align: center;
+}
+ul.block_coupon_conts_yoyaku li a {
+	display: block;
+	padding: 0.8em 1em;
+	background-color: var(--bgcolor03);
+	color: var(--txtcolor01);
+}
+ul.block_coupon_conts_yoyaku li a.tel {
+	background-color: var(--bgcolor03);
+}
+ul.block_coupon_conts_yoyaku li a.web {
+	background-color: var(--bordercolor03);
+}
+ul.block_coupon_conts_yoyaku li a.line {
+	background-color: #00b900;
+}
+@media screen and (min-width: 782px) {
+	figure.block_coupon_conts_area {
+		font-size: 14px;
+	}
+	ul.block_coupon_conts_yoyaku {
+		flex-wrap: nowrap;
+	}
+}

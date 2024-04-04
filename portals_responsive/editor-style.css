@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*      WordPress editor Styles     
+--------------------------------------*/
+body {
+	padding: 0 24px;
+	width: 672px;
+	color: #79796A;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+}
+/* editor */
+h3:not([class]){
+	margin: 24px auto 16px;
+	padding: 8px;
+	font-size: 16px;
+	color: #fff;
+	background: #ACAC9D; /* Old browsers */
+}
+h4{
+	margin: 32px 4px 24px;
+	padding: 0 8px;
+	font-size: 18px;
+	border-left: solid 8px #79796A;
+	border-bottom: dotted 2px #CFCFC7;
+}
+h5{
+	clear: both;
+	overflow: hidden;
+	margin: 24px 0 16px;
+	padding: 0 8px 2px 32px;
+	font-weight: bold;
+	border-bottom: dotted 2px #CFCFC7;
+	background: url(image/page/page_ico01.png) no-repeat;
+	font-size: 16px;
+}
+h6{
+	clear: both;
+	overflow: hidden;
+	margin: 24px 0 16px;
+	padding: 0 4px 2px;
+	font-weight: bold;
+	border-bottom: double 4px #CFCFC7;
+	font-size: 16px;
+}
+p {
+    display: block;
+    margin: 1em;
+}
+strong { font-weight: bold; }
+em { font-style: oblique; }
+blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+ul {
+	list-style: disc;
+	margin: 0 3em 1em;
+}
+ol {
+	list-style: decimal;
+	margin: 0 3em 1em;
+}
+ 
+/* img */
+ 
+.aligncenter {
+    display: block;
+    margin: 0 auto 8px;
+}
+.alignright { float: right; margin: 0 0 8px 8px; }
+.alignleft { float: left; margin: 0 8px 8px 0; }
+ 
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+    height: auto;
+    max-width: 100%;
+}

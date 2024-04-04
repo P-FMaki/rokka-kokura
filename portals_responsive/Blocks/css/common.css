@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*==================================
+Gutenberg_Basic
+==================================*/
+.wp-block * {
+	font-size: 18px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+		Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+}
+/* ダッシュアイコンが上書きされないように追記 */
+.wp-block[data-type="core/freeform"] .mce-btn i {
+	font-family: dashicons !important;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wp-block-media-text__content {
+	margin: 1em 0!important;
+}
+.is-style-checkbox {
+	margin-left: 2em!important;
+}
+.is-style-checkbox li::before {
+	top:50%!important;
+	transform: translateY(-50%)!important;
+}
+@media screen and (min-width: 782px) {
+	.wp-block-media-text__content {
+		margin: 0!important;
+	}
+}
+.wp-block-media-text__media img {
+	max-width: 100%!important;
+	width: auto!important;
+}
+.wp-block-media-text__content p {
+	margin: 1em 0!important;
+}
+.wp-block-image .alignright {
+	margin: 0.5em 0px 1.5em 1em!important;
+}
+.wp-block-image .alignleft {
+	margin: 0.5em 1em 1.5em 0!important;
+}
+
+.block_wrapper {
+	margin-bottom: 2em;
+}
+.block_wrapper > * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.block_wrapper p:not([class]) {
+	margin:16px;
+}
+.block_wrapper ol:not([class]),
+.block_wrapper ul:not([class]) {
+	margin-left: 3em;
+}
+.block_wrapper ol:not([class]) {
+	list-style: decimal;
+}
+.block_wrapper ul:not([class]) {
+	list-style: disc;
+}
+
+@media screen and (max-width: 480px) {
+	.wp-block-image .alignright,
+	.wp-block-image .alignleft {
+		float: none!important;
+		margin: 0.5em auto 1em!important;
+	}
+}
+.wp-block-image:not(.nostyle) {
+    margin: 0 auto 1em;
+}
+/*==================================
+BlockPattern_style
+==================================*/
+/*
+* SP2 PC3 column
+*/
+.sp2_pc3.wp-block-columns {
+	-ms-flex-wrap: wrap!important;
+	flex-wrap: wrap!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	gap: 0!important;
+}
+.sp2_pc3.wp-block-columns .wp-block-column {
+	-ms-flex-preferred-size: 45% !important;
+	flex-basis: 45% !important;
+	margin: 0 4px!important;
+}
+@media screen and (min-width: 480px) {
+	.sp2_pc3.wp-block-columns .wp-block-column {
+		-ms-flex-preferred-size: 28% !important;
+		flex-basis: 28% !important;
+	}
+
+}
