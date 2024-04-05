@@ -511,8 +511,8 @@ SP_contact
 	position: relative;
 	margin: 0 4px 16px;
 	padding: 16px;
-	border: solid 1px #bdbdae;
-	background: #f0f0e1;
+	border: solid 1px #fdf7f7;
+	background: #fdf7f7;
 	border-radius: 8px;
 }
 .contact_tel {
@@ -543,6 +543,28 @@ SP_contact
 .page_top_pc {
 	display: none;
 }
+.contact_conts img {
+	padding-bottom: 16px;
+}
+.uketsuke_time table {
+	width: 100%;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	border: none;
+}
+.uketsuke_time th,td {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+.uketsuke_time tr:first-child {
+	border-top: none;
+  }
+  .uketsuke_time tr:last-child {
+	border-bottom: none;
+  }
 /*==================================
 SP_map
 ==================================*/
@@ -1332,15 +1354,30 @@ for iPad~PC
 	}
 	.contact_add {
 		margin: 0 0 16px;
+		float: right;
+    	width: 50%;
+	}
+	.contact_uketsuke {
+		margin: 0 31px;
+		font-size: clamp(12px, 1.4vw, 15px);
 	}
 	.contact_add dt {
-		margin: 16px 0 0;
+		margin: 10px 0 0;
 		font-weight: bold;
 	}
 	.contact_map {
 		margin: 0 auto;
 		width: 100%;
 		height: 368px;
+	}
+	.contact_inner {
+		display: flex;
+		margin: 0 31px;
+		overflow: hidden;
+		padding: 16px 0;
+		max-width: 1236px;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.page_top_pc {
 		display: block;
@@ -1386,7 +1423,7 @@ for iPad~PC
 	PC_copyright
 	==================================*/
 	.copyright {
-		padding: 16px 0;
+		padding: 5px 0;
 		margin: 0;
 	}
 	.copyright small {
@@ -1413,6 +1450,7 @@ for iPad~PC
 	}
 	.f_inner ul {
 		display: flex;
+		justify-content: space-between;
 	}
 	/*==================================
 	PC_voice
@@ -1563,6 +1601,7 @@ PC iPad landscape ~
 		box-sizing: border-box;
 		background: #fff;
 		border-radius: 10px;
+		box-shadow: 2px 2px 4px rgba(219, 216, 216, 0.493);
 	}
 	#contents::after {
 		visibility: hidden;
