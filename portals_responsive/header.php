@@ -1,5 +1,4 @@
 <?php get_template_part('common-head'); ?>
-
 <!--=======================header===========================-->
 <header id="header">
 	<!--h_bgは背景をmain_imgとは別で画面いっぱいに表示させたいときに使う-->
