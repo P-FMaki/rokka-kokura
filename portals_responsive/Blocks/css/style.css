@@ -76,14 +76,26 @@ p.block_voice_menseki {
 ol.block_catch_list {
 	overflow: hidden;
 	padding: 1em;
+	margin:16px auto;
+	background-color: #f0e9e2;
+	border-radius: 30px;
+	padding-bottom: 16px;
 }
 li.block_catch_list_li {
 	list-style: none;
 	margin: 0 0 4px;
 	padding: 10px 0 8px 44px;
 	background: url(../../image/page/catch_ico01.png) no-repeat left center;
-	font-size: 20px;
+	font-size: clamp(15px, 1.4vw, 16px);
+	font-weight: bold;
 	border-bottom: dotted 2px var(--bordercolor03);
+}
+@media screen and (min-width: 782px) {
+	ol.block_catch_list {
+		width: 668px;
+		padding: 36px;
+		margin: 16px 16px 16px;
+	}
 }
 /*
 * イラストつきキャッチリスト

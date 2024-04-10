@@ -99,5 +99,8 @@ BlockPattern_style
 		-ms-flex-preferred-size: 28% !important;
 		flex-basis: 28% !important;
 	}
+	.sp2_pc3 {
+		width: 668px;
+	}
 
 }
