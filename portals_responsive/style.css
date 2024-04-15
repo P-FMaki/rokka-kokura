@@ -435,13 +435,13 @@ background: #ae7d5f;
 }
 .h_bg h1 {
 font-weight: normal;
-font-size: clamp(10px, 1.4vw, 15px);
+font-size: clamp(12px, 1.4vw, 15px);
 }
 .h_inner {
 color: #fff;
 overflow: hidden;
 margin: 0 auto;
-padding: 8px 0;
+padding: 0% 0;
 width: 95%;
 max-width: 1240px;
 }
@@ -449,7 +449,7 @@ max-width: 1240px;
 margin: 8px auto;
 }
 .h_logo img {
-width: clamp(100px, 80%, 800px);
+width: clamp(100px, 100%, 800px);
 }
 /*==================================
 SP_navigation
@@ -512,18 +512,23 @@ border: solid 1px #fdf7f7;
 background: #fdf7f7;
 border-radius: 8px;
 }
+.contact_inner {
+	margin: 16px auto;
+}
+.contact_inner img:first-child {
+	margin: 16px auto;
+}
 .contact_tel {
 margin: 0 auto;
 }
 .contact_uketsuke {
-margin: 0 auto 16px;
 overflow: hidden;
 background-color: #fff;
 box-shadow: 2px 2px 4px rgba(219, 216, 216, 0.493);
 font-weight: bold;
 }
 .contact_uketsuke span {
-margin: 0 auto;
+/* margin: 0 auto; */
 overflow: hidden;
 display: block;
 max-width: 304px;
@@ -542,7 +547,7 @@ text-align: center;
 display: none;
 }
 .contact_conts img {
-padding-bottom: 16px;
+/* padding-bottom: 16px; */
 }
 .uketsuke_time {
 padding: 16px;
@@ -1319,7 +1324,7 @@ nav {
 }
 .gnav_pc li {
 	text-align: center;
-	width: 24.9%;
+	width: 15%;
 	border-left: 1px solid #fff;
 }
 .gnav_pc li:last-child {
@@ -1327,9 +1332,10 @@ nav {
 }
 .gnav_pc li a {
 	display: block;
-	padding: 15px 10px;
+	padding: 7px 10px;
 	color: #6F1D0B;
 	text-decoration: none;
+	font-size: clamp(12px, 1.4vw, 16px);;
 }
 .gnav_pc li:hover {
 	opacity: 0.7;
@@ -1361,6 +1367,16 @@ PC_contact
 	margin: 0 24px 32px;
 	padding: 50px 64px;
 }
+.contact_inner {
+	width: clamp(400px, 100%, 544px);
+	margin: 25px auto 16px;
+	overflow: hidden;
+	max-width: 1236px;
+	align-items: center;
+}
+.contact_inner img:first-child {
+	margin: 0px auto;
+}
 .contact_pic {
 	float: left;
 	margin: 0 1% 1% 0;
@@ -1372,7 +1388,6 @@ PC_contact
 	width: 50%;
 }
 .contact_uketsuke {
-	margin: 0 auto;
 	font-size: clamp(12px, 1.4vw, 18px);
 }
 .contact_add dt {
@@ -1380,20 +1395,11 @@ PC_contact
 	font-weight: bold;
 }
 .contact_map {
-	margin: 0 auto;
 	width: 100%;
 	height: 240px;
 }
-.contact_inner {
-	width: clamp(400px, 100%, 544px);
-	margin: 0 auto 16px;
-	overflow: hidden;
-	max-width: 1236px;
-	align-items: center;
-}
 .contact_flex {
 	display: flex;
-	margin: 0 auto;
 	overflow: hidden;
 	max-width: 1236px;
 	align-items: center;
@@ -1448,11 +1454,11 @@ PC_menu sidemenu
 PC_copyright
 ==================================*/
 .copyright {
-	padding: 5px 0;
+	padding: 0;
 	margin: 0;
 }
 .copyright small {
-	font-size: 14px;
+	font-size: 13px;
 }
 .copyright a {
 	color: inherit;
@@ -1468,8 +1474,8 @@ PC_footer
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
-	margin: 0 auto;
-	padding: 16px 0;
+	margin: 0 auto  15px;
+	padding: 0;
 	width: 96%;
 	max-width: 1236px;
 	align-items: center;
@@ -1477,6 +1483,7 @@ PC_footer
 .f_inner ul {
 	display: flex;
 	justify-content: space-between;
+	gap: 6px;
 }
 /*==================================
 PC_voice
@@ -1564,6 +1571,9 @@ width: 50%;
 .top_pd01 {
 	margin: 0 auto 3em;
 }
+.contact_conts img {
+	padding-bottom: 0px;
+	}
 /*==================================
 PC_page
 ==================================*/
@@ -1635,7 +1645,7 @@ img {
 	image-rendering: -webkit-optimize-contrast;
 }
 #contents {
-	margin: 1em auto 40px;
+	margin: 3em auto 40px;
 	width: 96%;
 	max-width: 1236px;
 	padding: 48px 106px;

@@ -1,10 +1,10 @@
 <p id="bt_pagetop" class="bt_pagetop"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/image/all/bt_pagetop.png" alt="ページの上部へ戻る" loading="eager"></a></p>
 <aside>
   <div class="contact">
-    <p class="h_style02">お問い合わせはこちら | ポータルズ整骨院</p>
+    <p class="h_style02">お問い合わせはこちら 院</p>
     <div class="contact_conts">
       <p class="h_logo"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_logo_sp.png" alt="六花鍼灸整骨院.小倉駅前店"></p>
-      <div class="contact_flex">
+      <div class="contact_flex contact_inner">
         <p class="contact_pic"><img src="<?php echo get_template_directory_uri(); ?>/image/all/contact_pic01.jpg" alt=""></p>
         <dl class="contact_add">
           <dt>住所：</dt>
@@ -13,8 +13,8 @@
           <dd>○○駅から徒歩○○分</dd>
         </dl>
       </div>
-      <p class="contact_tel"><a href="tel:<?php the_author_meta('phone', '2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/contact_tel.png" alt=""></a></p>
-      <ul class="contact_flex">
+      <p class="contact_tel contact_inner"><a href="tel:<?php the_author_meta('phone', '2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/contact_tel.png" alt=""></a></p>
+      <ul class="contact_flex contact_inner">
         <li><a href="<?php the_author_meta('line', '2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/all/contact_line_btn.png" alt="LINE予約"></a></li>
         <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/image/all/contact_hpb_btn.png" alt="ホットペッパービューティ予約"></a></li>
       </ul>
