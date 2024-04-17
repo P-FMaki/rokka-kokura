@@ -451,6 +451,11 @@ margin: 8px auto;
 .h_logo img {
 width: clamp(100px, 100%, 800px);
 }
+.h_logo {
+margin: 0px;
+color: #6F1D0B;
+font-size: clamp(12px, 100%, 16px);
+}
 /*==================================
 SP_navigation
 ==================================*/
@@ -879,6 +884,9 @@ padding: 10px 0px;
 .aisatu_inr {
 	margin: 0 10px 20px;
 }
+.suisen_bk img {
+	margin-bottom: 16px;
+}
 .incho_bk {
 	background-color: #fdf7f7;
 	padding: 20px 0;
@@ -901,9 +909,9 @@ padding: 10px 0px;
 	font-size: clamp(23px, 1.4vw, 22px);
 }
 
-.incho_txt {
+.aisatu_txt {
 	display: inline-block;
-	margin: 0 auto;
+	margin: 0 auto 16px;
 	width: 100%;
 }
 /*==================================
@@ -1239,7 +1247,7 @@ body {
 	width: 100%;
 	max-width: 1240px; /*main_imgの幅*/
 	margin-top: 0 !important;
-	background: #f2ede9;
+	background: #fff;
 }
 .alignleft img,
 .alignright img {
@@ -1325,6 +1333,8 @@ PC_header
 ==================================*/
 .h_logo {
 	margin: 0px;
+	color: #6F1D0B;
+	font-size: clamp(12px, 1.2vw, 16px);
 }
 .h_logo img {
 	margin: 0 0 auto ;
@@ -1362,7 +1372,7 @@ nav {
 	padding: 7px 10px;
 	color: #6F1D0B;
 	text-decoration: none;
-	font-size: clamp(12px, 1.4vw, 16px);;
+	font-size: clamp(12px, 1.4vw, 16px);
 }
 .gnav_pc li:hover {
 	opacity: 0.7;
@@ -1587,10 +1597,20 @@ PC_toppage
 }
 .aisatu_flex {
 display: flex;
-gap: 2em;
 justify-content: center;
 margin-bottom: 2em;
 }
+.suisen_bk{
+	/* padding: 20px 54px; */
+	margin-bottom: 20px;
+	border-radius: 15px;
+	text-align: left;
+}
+.suisen_bk img {
+	object-fit: contain;
+}
+.suisen_bk div {
+margin-left: 10px;
 .incho_name {
 	width: 100%;
 }
@@ -1667,10 +1687,14 @@ PC_pager
 	width: 630px;
 }
 }
+}
 /*==================================
 PC iPad landscape ~
 ==================================*/
 @media screen and (min-width: 960px) {
+body {
+	background-color: #f3ede8;
+}
 img {
 	image-rendering: -webkit-optimize-contrast;
 }

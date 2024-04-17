@@ -218,7 +218,7 @@ p.block_point_list_ttl::after {
 	content: counter(blockPoint, decimal-leading-zero);
 	color: var(--txtcolor01);
 	font-size: 155%;
-	top: .3em;
+	top: .4em;
 	left: .4em;
 	font-weight: normal;
 }
@@ -407,6 +407,124 @@ ul.block_flow_list_txt {
 	}
 	p.block_flow_list_txt {
 		clear: left;
+	}
+}
+/*
+*施術の流れPC3列
+*/
+ul.block_flow3 {
+	margin: 2em auto;
+	list-style: none;
+	counter-reset: blockflow;
+	padding: 0 1em;
+}
+ul.block_flow3 li {
+	padding: 24px 0;
+	margin: 0 0 24px;
+}
+ul.block_flow3 li:first-child {
+	padding: 0 0 24px;
+}
+ul.block_flow3 li::before {
+	border-color: var(--bordercolor03) transparent transparent;
+	border-style: solid;
+	border-width: 60px 80px 0 80px;
+	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
+	bottom: 60px;
+	bottom: calc(clamp(16px, 4.83vw, 27.4px) * -1);
+	content: "";
+	height: 0;
+	left: calc(50% - 80px);
+	left: calc(50% - clamp(20px, 6.45vw, 80px));
+	position: absolute;
+	width: 0;
+}
+ul.block_flow3 li::after {
+	border-color: #d33939 transparent transparent;
+	border-style: solid;
+	border-width: 60px 80px 0 80px;
+	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
+	bottom: 60px;
+	bottom: calc((clamp(16px, 4.83vw, 28px) * -1) + 3px);
+	content: "";
+	height: 0;
+	left: calc(50% - 80px);
+	left: calc(50% - clamp(20px, 6.45vw, 80px));
+	position: absolute;
+	width: 0;
+}
+ul.block_flow3 li:last-child,
+ul.block_flow3 li:last-child::before,
+ul.block_flow3 li:last-child::after {
+	border: none;
+}
+li.block_flow3_list {
+	border-bottom: dotted 2px var(--bordercolor01);
+	padding: 24px 0;
+}
+li.block_flow3_list dl {
+	overflow: hidden;
+	padding: 0 1em;
+}
+li.block_flow3_list dl dt {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+li.block_flow3_list dl dt::before {
+	counter-increment: blockflow;
+	content:  counter(blockflow);
+	color: var(--txtcolor01);
+	border-left: solid 2px var(--txtcolor01);
+	border-right: solid 2px var(--txtcolor01);
+	font-size: 18px;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	padding: 0 0.5em;
+}
+p.block_flow3_list_ttl {
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+		"Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+		"MS PGothic", sans-serif;
+	margin-bottom: 16px;
+	margin-left: 8px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+figure.block_flow3_list_pic {
+	margin: 0 0 16px;
+}
+ul.block_flow3_list_txt {
+	/* clear: left; */
+}
+@media screen and (min-width: 782px) {
+	.block_flow3 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	ul.block_flow3 li {
+		padding: 0;
+		width: 33%; 
+	}
+	li.block_flow3_list {
+		border-bottom: none;
+	}
+	p.block_flow3_list_ttl {
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+	figure.block_flow3_list_pic {
+		margin: 0 auto;
+	}
+	p.block_flow3_list_txt {
+		margin: 0 auto;
+	}
+	li.block_flow3_list dl {
+		padding: 0 0.5em;
 	}
 }
 

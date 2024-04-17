@@ -150,6 +150,18 @@ function my_acf_init_block_types() {
 			'mode'              => 'auto',
 			'enqueue_assets'    => 'portals_block_css',
 		));
+		// フロー3
+		acf_register_block_type(array(
+			'name'              => 'flow_pc3_block',
+			'title'             => __('フロー3列'),
+			'description'       => __('フローのブロックです。無限に増やすことができますが、3つ?最大でも9つくらいまでが見やすいと思います。'),
+			'render_template'   => 'Blocks/output.php',
+			'category'          => 'portals',
+			'icon'              => 'editor-ol',
+			'keywords'          => array( '施術の流れ', 'flow' , 'portals' , 'ポータルズ' ),
+			'mode'              => 'auto',
+			'enqueue_assets'    => 'portals_block_css',
+		));
 	}
 }
 function portals_block_css( $block ){

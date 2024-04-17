@@ -240,6 +240,24 @@ if ( have_rows ( 'flow_block' ) ) : ?>
 	<?php endwhile; ?>
 </ul>
 <?php endif; ?>
+<?php //フローPC3
+if ( have_rows ( 'flow_pc3_block' ) ) : ?>
+<ul class="block_flow3">
+	<?php while (have_rows( 'flow_pc3_block' )) : the_row(); ?>
+	<li class="block_flow3_list">
+		<dl>
+			<dt><p class="block_flow3_list_ttl"><?php the_sub_field('flow_pc3_block_ttl'); ?></p></dt>
+			<dd><?php
+				$image = get_sub_field('flow_pc3_block_pic');
+				if( !empty($image) ): ?>
+				<figure class="block_flow3_list_pic"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></figure>
+				<?php endif; ?>
+				<p class="block_flow3_list_txt"><?php the_sub_field('flow_pc3_block_txt'); ?></p></dd>
+		</dl>
+	</li>
+	<?php endwhile; ?>
+</ul>
+<?php endif; ?>
 
 <?php //クーポン
 if(get_field('coupon_block_ttl')): ?>
