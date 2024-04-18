@@ -1,7 +1,7 @@
 <p id="bt_pagetop" class="bt_pagetop"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/image/all/bt_pagetop.png" alt="ページの上部へ戻る" loading="eager"></a></p>
 <aside>
   <div class="contact">
-    <p class="h_style02">お問い合わせはこちら 院</p>
+    <p class="h_style02">お問い合わせはこちら</p>
     <div class="contact_conts">
       <p class="h_logo"><img src="<?php echo get_template_directory_uri(); ?>/image/all/h_logo_sp.png" alt="六花鍼灸整骨院.小倉駅前店"></p>
       <div class="contact_flex contact_inner">

@@ -31,16 +31,23 @@ Custom_Block
 div.block_voice {
 	overflow: hidden;
 	padding: 16px;
-	margin: 2em 0.5em;
+	margin: 2em 0em;
 	background: var(--bgcolor01);
-	border: solid 1px var(--bordercolor01);
+	border: solid 25px #FDF7F7;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+div.block_voice:last-child {
+	margin-bottom: 0;
 }
 p.block_voice_ttl {
 	margin: 0 0 8px;
 	padding: 8px 16px;
-	border-bottom: dotted 2px var(--bordercolor02);
+	border-bottom: solid 2px #e6d5d0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: bold;
 }
 .block_voice_container_pic figure img {
 	margin: 0 auto 16px;
@@ -49,6 +56,7 @@ p.block_voice_menseki {
 	overflow: hidden;
 	margin: 16px 16px 0;
 	font-size: 12px;
+	color: var(--txtcolor01);
 }
 @media screen and (min-width: 782px) {
 	.block_voice_container {
@@ -426,34 +434,7 @@ ul.block_flow3 li {
 ul.block_flow3 li:first-child {
 	padding: 0 0 24px;
 }
-ul.block_flow3 li::before {
-	border-color: var(--bordercolor03) transparent transparent;
-	border-style: solid;
-	border-width: 60px 80px 0 80px;
-	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
-	bottom: 60px;
-	bottom: calc(clamp(16px, 4.83vw, 27.4px) * -1);
-	content: "";
-	height: 0;
-	left: calc(50% - 80px);
-	left: calc(50% - clamp(20px, 6.45vw, 80px));
-	position: absolute;
-	width: 0;
-}
-ul.block_flow3 li::after {
-	border-color: #d33939 transparent transparent;
-	border-style: solid;
-	border-width: 60px 80px 0 80px;
-	border-width: clamp(16px, 4.83vw, 26px) clamp(20px, 6.45vw, 80px) 0;
-	bottom: 60px;
-	bottom: calc((clamp(16px, 4.83vw, 28px) * -1) + 3px);
-	content: "";
-	height: 0;
-	left: calc(50% - 80px);
-	left: calc(50% - clamp(20px, 6.45vw, 80px));
-	position: absolute;
-	width: 0;
-}
+
 ul.block_flow3 li:last-child,
 ul.block_flow3 li:last-child::before,
 ul.block_flow3 li:last-child::after {

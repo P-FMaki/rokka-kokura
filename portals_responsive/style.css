@@ -777,7 +777,7 @@ display: none;
 SP_voice
 ==================================*/
 .voice {
-margin: 0 0 24px;
+margin: 0 0px 24px;
 }
 .voice_list li {
 margin: 0 4px 16px;
@@ -788,7 +788,7 @@ border-radius: 8px;
 }
 .voice_conts {
 overflow: hidden;
-padding: 16px;
+padding: 10px;
 background: #fff;
 }
 .voice_conts h3,
@@ -800,7 +800,6 @@ border-bottom: dotted 2px #e3e3da;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
 }
-
 .voice_txt p {
 margin: 0 0 1em;
 }
@@ -816,9 +815,30 @@ margin: 0 auto 8px;
 overflow: hidden;
 margin: 16px 0 0;
 font-size: 12px;
-color: #79796a;
+color: #d33939;
 }
-
+.voice_morebtn {
+display:flex;
+align-items: center;
+justify-content: center;
+height:60px;
+background: #711d0d;
+color: #fff;
+text-decoration: none;
+border-radius: 50px;
+}
+.voice_morebtn a:after {
+	position: absolute;
+    content: '▶';
+    right: 2px;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    color: #d25455;
+    font-size: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
 /*==================================
 SP_toppage
 ==================================*/
@@ -1539,9 +1559,9 @@ PC_voice
 	margin: 0 24px 32px;
 	padding: 24px;
 }
-.voice_conts {
+/* .voice_conts {
 	padding: 24px;
-}
+} */
 .voice_conts h3 {
 	width: 100%;
 }
