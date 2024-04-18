@@ -448,8 +448,11 @@ max-width: 1240px;
 .h_logo {
 margin: 8px auto;
 }
+.h_logo p {
+	display: none;
+}
 .h_logo img {
-width: clamp(100px, 100%, 800px);
+width: clamp(100px, 80%, 800px);
 }
 .h_logo {
 margin: 0px;
@@ -1334,10 +1337,14 @@ PC_header
 .h_logo {
 	margin: 0px;
 	color: #6F1D0B;
-	font-size: clamp(12px, 1.2vw, 16px);
+	font-size: clamp(14px, 0vw, 16px);
+}
+.h_logo p {
+	display: block;
 }
 .h_logo img {
 	margin: 0 0 auto ;
+	width: clamp(100px, 100%, 800px);
 }
 /*==================================
 PC_navigation

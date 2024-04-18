@@ -80,6 +80,7 @@ ol.block_catch_list {
 	background-color: #f0e9e2;
 	border-radius: 30px;
 	padding-bottom: 16px;
+	width: 100%;
 }
 li.block_catch_list_li {
 	list-style: none;
@@ -92,7 +93,7 @@ li.block_catch_list_li {
 }
 @media screen and (min-width: 782px) {
 	ol.block_catch_list {
-		width: 668px;
+		/* width: 668px; */
 		padding: 36px;
 		margin: 16px 16px 16px;
 	}
