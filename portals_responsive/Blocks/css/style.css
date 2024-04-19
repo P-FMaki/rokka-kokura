@@ -92,12 +92,13 @@ ol.block_catch_list {
 }
 li.block_catch_list_li {
 	list-style: none;
-	margin: 0 0 4px;
+	margin: 0 5px 4px;
 	padding: 10px 0 8px 44px;
 	background: url(../../image/page/catch_ico01.png) no-repeat left center;
 	font-size: clamp(15px, 1.4vw, 16px);
 	font-weight: bold;
 	border-bottom: dotted 2px var(--bordercolor03);
+	font-size: 16px;
 }
 @media screen and (min-width: 782px) {
 	ol.block_catch_list {
@@ -227,8 +228,8 @@ p.block_point_list_ttl::after {
 	content: counter(blockPoint, decimal-leading-zero);
 	color: var(--txtcolor01);
 	font-size: 155%;
-	top: .4em;
-	left: .4em;
+	top: .36em;
+	left: .36em;
 	font-weight: normal;
 }
 p.block_point_list_txt {
@@ -481,6 +482,7 @@ figure.block_flow3_list_pic {
 }
 ul.block_flow3_list_txt {
 	/* clear: left; */
+	font-size: 16px;
 }
 @media screen and (min-width: 782px) {
 	.block_flow3 {

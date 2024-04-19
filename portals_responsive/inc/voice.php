@@ -81,6 +81,6 @@ $my_query = new WP_Query($args);
 <?php endif;
 wp_reset_postdata(); ?>
 <div class="voice_conts">
-<div class="voice_morebtn"><a href="<?php echo get_template_directory_uri(); ?>">お喜びの声をもっと見る</a></div>
+<a href="<?php echo get_template_directory_uri(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/voice/more_btn.png"></a>
 </div>
 <!--======voice:end======-->
