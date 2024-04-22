@@ -84,7 +84,7 @@ p.block_voice_menseki {
 ol.block_catch_list {
 	overflow: hidden;
 	padding: 1em;
-	margin:16px auto;
+	margin:26px auto;
 	background-color: #f0e9e2;
 	border-radius: 30px;
 	padding-bottom: 16px;
@@ -104,7 +104,7 @@ li.block_catch_list_li {
 	ol.block_catch_list {
 		/* width: 668px; */
 		padding: 36px;
-		margin: 16px 16px 16px;
+		margin: 16px 16px 26px;
 	}
 }
 /*
@@ -205,6 +205,7 @@ p.block_point_list_ttl {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	color: #711d0d;
 }
 p.block_point_list_ttl::before,
 p.block_point_list_ttl::after {
@@ -234,6 +235,7 @@ p.block_point_list_ttl::after {
 }
 p.block_point_list_txt {
 	clear: left;
+	font-size: 16px;
 }
 figure.block_point_list_pic {
 	margin: 0 0 1em;

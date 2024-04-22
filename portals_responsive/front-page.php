@@ -12,5 +12,6 @@
 <?php //get_template_part('inc/voice'); ?>
 <?php //dynamic_sidebar( 'トップページ（下）' ); ?>
 <?php get_template_part('inc/contact'); ?>
+<?php get_template_part('inc/footer_bnr'); ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -53,6 +53,7 @@ table {
 }
 .block_wrapper p:not([class]) {
 	margin:16px;
+	font-size: 16px;
 }
 .block_wrapper ol:not([class]),
 .block_wrapper ul:not([class]) {
@@ -92,7 +93,10 @@ BlockPattern_style
 .sp2_pc3.wp-block-columns .wp-block-column {
 	-ms-flex-preferred-size: 45% !important;
 	flex-basis: 45% !important;
-	margin: 0 4px!important;
+	margin: 0 6px!important;
+}
+.sp2_pc3 {
+	color: #614331;
 }
 @media screen and (min-width: 480px) {
 	.sp2_pc3.wp-block-columns .wp-block-column {
