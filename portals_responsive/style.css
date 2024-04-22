@@ -557,8 +557,8 @@ text-align: center;
 .page_top_pc {
 display: none;
 }
-.contact_conts img {
-/* padding-bottom: 16px; */
+.contact_conts .h_logo img {
+	padding: 10px;
 }
 .uketsuke_time {
 padding: 16px;
@@ -590,6 +590,24 @@ border-bottom: none;
 .uketsuke_time tr:first-child {
 border-top: none;
 }
+/*==================================
+SP_contact下バナーエリア
+==================================*/
+.f_bnr_conts {
+	margin: 0 4px 16px;
+	padding: 16px 16px 32px;
+	border: solid 1px #fdf7f7;
+	background: #fdf7f7;
+	border-radius: 8px;
+	}
+.f_bnr_conts p {
+	text-align: center;
+	margin: 0 0 16px;
+	font-weight: bold;
+	padding-bottom: 16px;
+	font-size: clamp(16px, 1.4vw, 18px);
+	}
+
 /*==================================
 SP_map
 ==================================*/
@@ -894,30 +912,29 @@ padding: 10px 0px;
 }
 .incho_bk {
 	background-color: #fdf7f7;
+	color: #711d0d;
 	padding: 20px 0;
 	margin-bottom: 20px;
 	border-radius: 15px;
 	text-align: center;
 }
-.incho_bk * {
-	margin: 16px auto;
-}
-
 .incho_name {
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	transform: rotate(.03deg);
-	border-bottom: 2px dotted #523527;
-    width: 86%;
+	border-bottom: 2px dotted #711d0d;
 	padding: 5px;
+	margin: 0 auto;
 }
 .incho_name span{
-	font-size: clamp(23px, 1.4vw, 22px);
+	font-size: clamp(23px, 2vw, 25px);
 }
-
 .aisatu_txt {
 	display: inline-block;
 	margin: 0 auto 16px;
 	width: 100%;
+}
+.aisatu_txt span {
+	color: #000;
 }
 /*==================================
 SP_page
@@ -1346,7 +1363,7 @@ PC_header
 }
 .h_logo img {
 	margin: 0 0 auto ;
-	width: clamp(100px, 100%, 800px);
+	width: clamp(100px, 98%, 800px);
 }
 /*==================================
 PC_navigation
@@ -1413,6 +1430,10 @@ PC_contact
 	margin: 0 24px 32px;
 	padding: 50px 64px;
 }
+.contact_conts .h_logo img {
+    width: clamp(100px, 76%, 800px);
+	margin: 0 auto;
+}
 .contact_inner {
 	width: clamp(400px, 100%, 544px);
 	margin: 25px auto 16px;
@@ -1468,6 +1489,13 @@ margin-bottom: 0 auto;
 .page_top_pc a:hover,
 .page_top_pc a:active {
 	color: #baea83;
+}
+/*==================================
+PC_下部バナーエリア
+==================================*/
+.f_bnr_conts {
+	margin: 0 24px 32px;
+	padding: 50px 64px;
 }
 /*==================================
 PC_menu sidemenu
@@ -1607,27 +1635,37 @@ PC_toppage
 	margin: 0 6px 22px;
 }
 /*挨拶*/
-.aisatu_inr {
-	padding: 0 50px;
-}
 .aisatu_flex {
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
+gap:5px;
 margin-bottom: 2em;
+padding: 22px 16px;
 }
 .suisen_bk{
-	/* padding: 20px 54px; */
+	padding: 0px;
 	margin-bottom: 20px;
 	border-radius: 15px;
 	text-align: left;
+	max-width: 610px;
+	margin: 0 auto;
 }
 .suisen_bk img {
 	object-fit: contain;
+	padding-bottom: 36px;
 }
 .suisen_bk div {
 margin-left: 10px;
+}
 .incho_name {
 	width: 100%;
+}
+.incho_bk div {
+max-width: 290px;
+}
+.aisatu_txt {
+	font-size: 16px;
+	line-height: 3vh;
 }
 /*TOPセクションの余白調整*/
 .top_pd01 {
@@ -1700,7 +1738,6 @@ PC_pager
 ==================================*/
 .navigation {
 	width: 630px;
-}
 }
 }
 /*==================================
