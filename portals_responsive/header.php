@@ -61,6 +61,10 @@
 	<!--ブログのmain_imgを設置-->
 <?php endif; ?>
 <!--=======================contents===========================-->
-<div id="contents">
+<?php if (is_front_page()) : ?>
+	<div id="top_contents">
+<?php else : ?>
+	<div id="contents">
+<?php endif; ?>
 	<!--=======================main===========================-->
 	<div id="main">

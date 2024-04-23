@@ -100,6 +100,16 @@ li.block_catch_list_li {
 	border-bottom: dotted 2px var(--bordercolor03);
 	font-size: 16px;
 }
+#top_contents li.block_catch_list_li {
+	list-style: none;
+	margin: 0 5px 4px;
+	padding: 10px 0 8px 44px;
+	background: url(../../image/top/catch_ico01.png) no-repeat left center;
+	font-size: clamp(15px, 1.4vw, 16px);
+	font-weight: bold;
+	border-bottom: dotted 2px var(--bordercolor03);
+	font-size: 16px;
+}
 @media screen and (min-width: 782px) {
 	ol.block_catch_list {
 		/* width: 668px; */

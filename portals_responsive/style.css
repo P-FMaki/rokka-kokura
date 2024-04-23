@@ -338,6 +338,9 @@ height: 100% !important;
 #contents {
 	margin-top: 30px;
 }
+#top_contents {
+	margin-top: 30px;
+}
 /*==================================
 SP_heading
 ==================================*/
@@ -362,9 +365,11 @@ display: none;
 clear: both;
 margin: 24px auto 16px;
 padding: 8px;
-background: #f0f0e1;
-border: solid 1px #7a7a6b;
+background: #711d0d;
 font-size: 20px;
+color: #fff;
+outline: solid 1px #fff;
+outline-offset: -10px;
 }
 .h_style01 a {
 color: inherit;
@@ -389,8 +394,8 @@ clear: both;
 margin: 32px 4px 24px;
 padding: 0 8px;
 font-size: 18px;
-border-left: solid 8px #79796a;
-border-bottom: dotted 2px #cfcfc7;
+border-left: solid 8px #711d0d;
+border-bottom: dotted 2px #711d0d;
 }
 .h_style04,
 .post h5,
@@ -401,7 +406,7 @@ overflow: hidden;
 margin: 24px 0 16px;
 padding: 0 8px 2px 32px;
 font-weight: bold;
-border-bottom: dotted 2px #cfcfc7;
+border-bottom: dotted 2px #d25555;
 font-size: 16px;
 }
 .h_style04::before,
@@ -417,7 +422,7 @@ background: #fff;
 width: 0.5em;
 height: 0.5em;
 border-radius: 50%;
-box-shadow: 0 0 0 8px #f0f0e1;
+box-shadow: 0 0 0 8px #d25555;
 }
 .h_style05,
 .post h6,
@@ -427,7 +432,7 @@ overflow: hidden;
 margin: 24px 0 16px;
 padding: 0 4px 2px;
 font-weight: bold;
-border-bottom: double 4px #cfcfc7;
+border-bottom: double 4px #dac5b8;
 font-size: 16px;
 }
 /*==================================
@@ -1665,7 +1670,7 @@ max-width: 290px;
 }
 .aisatu_txt {
 	font-size: 16px;
-	line-height: 3vh;
+	line-height: 3.5vh;
 }
 /*TOPセクションの余白調整*/
 .top_pd01 {
@@ -1762,6 +1767,25 @@ img {
 	box-shadow: 2px 2px 4px rgba(219, 216, 216, 0.493);
 }
 #contents::after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+#top_contents {
+	margin: 3em auto 40px;
+	width: 96%;
+	max-width: 1236px;
+	padding: 48px 106px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgba(219, 216, 216, 0.493);
+}
+#top_contents::after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
